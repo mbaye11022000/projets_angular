@@ -1,0 +1,40 @@
+<!-- signin.component.html -->
+<div class="signin-container">
+    <img src="assets/profile.ing.png" alt="" class="img">
+    <p>Bonjour! Vous avez manqué à vos formulaires. 😊</p>
+    <form (ngSubmit)="onSubmit()">
+        <button type="submit" class="q">
+         
+          <img src="assets/gol.png" alt="" class="jjj">S'IDENTIFIER AVEC GOOGLE
+      
+        </button>
+        <br><br>
+        <button type="submit" class="h">
+          <img src="assets/aple.png" alt="" class="jjjk">
+          S'IDENTIFIER AVEC APPLE
+        </button>
+        <div class="separator">OU</div>
+        
+        <div class="form-group">
+          <label for="email">Nom d'utilisateur ou email</label>
+          <input type="email" id="email" [(ngModel)]="email" name="email" required placeholder="Exemple@domaine.com">
+        </div>
+        <div class="form-group password-group">
+          <label for="password" >Mot de passe </label>
+          <input [type]="passwordFieldType" id="password" [(ngModel)]="password" name="password" required placeholder="Veuillez saisir votre mot de passe " >
+          <i class="fa" [ngClass]="{'fa-eye': passwordFieldType === 'password', 'fa-eye-slash': passwordFieldType === 'text'}" (click)="togglePasswordVisibility()"></i>
+        </div>
+        <div class="form-group">
+          <a href="forgot-password" class="forgot-password">Vous avez oublier votre mot de passe?</a>
+        </div>
+        <button type="submit" class="s">S'IDENTIFIER</button>
+        <br> <br>
+        <div class="register-link">
+          <span>Vous etes nouveau ?</span>
+          <a href="register" class="register">S'inscrire gratuitement</a>
+        </div>
+    </form>
+   
+   
+</div>
+<div class="car"> <app-carousel></app-carousel></div>

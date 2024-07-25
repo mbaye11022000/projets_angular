@@ -1,0 +1,22 @@
+<div mat-dialog-content>
+    <div>
+      <label for="folderName">Nom de dossier</label>
+      <input type="text" id="folderName" [(ngModel)]="folderName" name="folderName" required>
+    </div>
+    <div>
+      <label for="folderColor">Couleur du dossier</label>
+      <div class="color-options">
+        <div *ngFor="let color of colors" 
+             [style.background]="color" 
+             (click)="selectColor(color)"
+             [class.selected]="color === selectedColor">
+        </div>
+        <div class="add-color" (click)="addColor()">+</div>
+      </div>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Annuler</button>
+    <button mat-button (click)="onSubmit()" [disabled]="!folderName || !selectedColor">Ajouter</button>
+  </div>
+  

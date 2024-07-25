@@ -1,0 +1,116 @@
+.sidenav-container {
+    height: 92%;
+    
+    
+  }
+  
+  .sidenav {
+    background-color: white;
+    color: black;
+    
+  }
+  
+  .sidenav-toolbar {
+    background-color: white;
+    color: black;
+  }
+  
+  .mat-toolbar {
+    background-color:  hsl(240, 33%, 97%); /* Couleur d'arrière-plan pour la barre d'outils principale */
+    color: white;
+    margin-top: 5%;
+  }
+  
+
+    .mat-list-item {
+      display: flex;
+      align-items: center;
+    }
+    
+    .mat-list-item mat-icon {
+      margin-right: 8px;
+    }
+    
+    .mat-list-item .flex-grow {
+      flex-grow: 1;
+    }
+    
+    
+  
+  .mat-list-item {
+    color: white;
+    
+  }
+  
+  .mat-list-item .mat-icon {
+    color:rgb(167, 6, 6);
+  }
+  
+  .content {
+    padding: 1px;
+    margin-top: 1%;
+  }
+  .separator {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+  }
+
+  .badge:hover {
+    background-color: #0c0c0c; /* Couleur de fond au survol */
+  }
+  
+/* Assurez-vous que le conteneur du badge est positionné en bas */
+
+::ng-deep .mat-expansion-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligne les éléments du header */
+}
+
+::ng-deep .mat-expansion-panel-header .badge {
+  position: absolute;
+  bottom: 10px; /* Ajustez cette valeur selon vos besoins */
+  left: 10px; /* Ajustez cette valeur selon vos besoins */
+  background-color: #130202; /* Couleur de fond pour le badge */
+  padding: 5px 10px; /* Espacement autour du texte du badge */
+  border-radius: 4px; /* Coins arrondis pour le badge */
+  color: white; /* Couleur du texte du badge */
+  text-decoration: none; /* Supprime la décoration du lien */
+}
+
+  mat-expansion-panel {
+    margin: 0px 0;
+  }
+  
+  mat-expansion-panel-header {
+    background-color: white;
+  }
+  
+  mat-expansion-panel-header .mat-content {
+    align-items: center;
+  }
+  
+  mat-panel-title {
+    display: flex;
+    align-items: center;
+    
+  }
+  mat-icon{
+    color: white;
+    text-shadow: 
+      -1px -1px 0 #000, 1px -1px 0 #000, 
+      -1px 1px 0 #000, 1px 1px 0 #000;
+    
+  }
+ 
+
+  .vertical-line {
+    height: 100%;
+    width: 12px;
+    background-color: rgba(219, 15, 15, 0.12);
+    margin: 0 16px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  

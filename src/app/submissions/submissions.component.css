@@ -1,0 +1,87 @@
+.submissions-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.submissions-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.submissions-empty {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.submissions-table {
+  width: 100%;
+  border-collapse: separate; /* Utiliser separate pour les bordures individuelles */
+  border-spacing: 0; /* Éliminer l'espacement entre les cellules */
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.submissions-table th,
+.submissions-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Ajouter une bordure en bas uniquement */
+  text-align: left;
+}
+
+.submissions-table th {
+  background-color: #f5f5f5;
+  cursor: pointer; /* Rendre les titres cliquables */
+  user-select: none; /* Éviter la sélection de texte */
+}
+
+.submissions-table th:last-child, 
+.submissions-table td:last-child {
+  border-right: none; /* Éliminer la bordure droite pour la dernière colonne */
+}
+
+.form-owner-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.submissions-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 250px;
+  margin-left: auto; /* Aligner à droite */
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-container i {
+  color: #999;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.submissions-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

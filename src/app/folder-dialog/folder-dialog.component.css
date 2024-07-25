@@ -1,0 +1,34 @@
+/* folder-dialog.component.css */
+.color-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-options div {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .color-options div.selected {
+    border-color: #000;
+  }
+  
+  .add-color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  /* dashboard.component.css */
+  button[mat-button] {
+    margin: 5px 0;
+    color: #d31515;
+    
+  }
+  

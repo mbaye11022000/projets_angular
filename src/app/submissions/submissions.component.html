@@ -1,0 +1,54 @@
+<div class="submissions-container">
+  <h6>MES SOUMISSIONS</h6>
+  
+  <div class="submissions-section">
+    <div class="submissions-header">Brouillons</div>
+    <div class="search-container">
+      <input type="text" placeholder="Chercher">
+      <i class="fas fa-search"></i>
+    </div>
+  </div>
+  <div class="submissions-empty">Aucun projet n'est enregistré</div>
+  
+  <div class="submissions-section">
+   
+    <table class="submissions-table">
+      
+        <div class="submissions-header">Complété</div>
+        <tr class="sub">
+          <th (click)="onSort('owner')">Propriétaire du formulaire</th>
+          <th (click)="onSort('title')">Titre du formulaire</th>
+          <th (click)="onSort('date')">Date de réponse</th>
+          <th>Actions</th>
+        </tr>
+      
+      
+        <tr>
+          <td>
+            <img src="assets/ik.png" alt="" class="form-owner-icon">
+            forms.app
+            
+         
+          <td>Onboarding Survey (FR)</td>
+          <td>10/07/2024</td>
+          <td>
+            <button mat-icon-button>
+              <mat-icon>chat</mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon>delete</mat-icon>
+            </button>
+         
+        </tr>
+      
+      <div class="submissions-footer">
+        <span>1-1 of 1</span>
+        <mat-paginator [pageSizeOptions]="[20]"></mat-paginator>
+      </div>
+    </table>
+    
+  </div>
+</div>

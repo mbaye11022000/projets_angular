@@ -1,0 +1,62 @@
+
+
+   <div class="main-container">
+    <h6 class="f">Mes formulaires</h6>
+     
+    
+    <!-- <div class="button-container">
+      <button mat-raised-button (click)="openDialog()"  >CRÉER UN FORMULAIRE</button>
+  </div> -->
+  <div class="button-container">
+    <button mat-raised-button (click)="openDialog()" class="custom-button">CRÉER UN FORMULAIRE</button>
+  </div>
+  
+  
+    <div class="toolbar">
+      <button mat-icon-button matTooltip="Rechercher">
+        <mat-icon  class="bac">search</mat-icon>
+        
+      </button>
+     
+
+      <button mat-icon-button matTooltip="Filtrer" (click)="openDialo()">
+  <mat-icon class="bac">filter_list</mat-icon>
+</button>
+
+      
+      <button mat-icon-button matTooltip="Filtrer" class="icon-container" (click)="openSortDialog()">
+        <mat-icon class="bac">arrow_upward</mat-icon>
+        <mat-icon class="bac">format_align_left</mat-icon>
+      </button>
+    
+
+      <button mat-icon-button matTooltip="Trier" (click)="openDialogg()">
+        <mat-icon class="bac">sort</mat-icon>
+      </button>
+      <button mat-icon-button matTooltip="Liste">
+        <mat-icon class="bac">view_list</mat-icon>
+      </button>
+      
+
+
+      <button mat-icon-button matTooltip="Grille">
+        <mat-icon class="bac">view_module</mat-icon>
+        
+      </button>
+    </div>
+  
+    <div class="form-list">
+      <img src="assets/myforms-empty.svg" alt="" class="img">
+      <h6>Vous n'avez pas encore créé de formulaires.</h6>
+      <p>Vos formulaires apparaîtront ici.</p>
+    </div>
+
+    <!-- Boîte de dialogue modale -->
+  <div *ngIf="showDialog" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="closeDialog()">&times;</span>
+      <app-form></app-form>
+    </div>
+  </div>
+  </div>
+  

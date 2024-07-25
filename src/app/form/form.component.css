@@ -1,0 +1,100 @@
+.options {
+  display: flex;
+  justify-content: space-between; /* Utilisation de space-between pour ajouter de l'espace */
+  padding: 20px;
+  
+}
+
+.option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Encadrer les cartes par des traits */
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 0 10px; /* Ajout de marge horizontale pour l'espace entre les cartes */
+}
+
+.option-card:hover {
+  background-color: #fcfafa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #182da1;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+}
+.h{
+  font-weight: bold;
+
+}
+.option-cardd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Encadrer les cartes par des traits */
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgb(241, 235, 240);
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin: 0 10px; /* Ajout de marge horizontale pour l'espace entre les cartes */
+}
+.option-cardd:hover {
+  background-color: #f3d3e3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.icon-box {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.icon-box i {
+  font-size: 40px;
+  color: #4A90E2; /* Changez la couleur selon vos besoins */
+}
+
+.icon-box p {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.icon-box small {
+  display: block;
+  color: #777;
+}
+.material-icons{
+  color: #0f9ee0;
+}
+

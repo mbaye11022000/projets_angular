@@ -1,0 +1,24 @@
+
+
+
+   <h2 mat-dialog-title>Créer un nouveau dossier</h2>
+<mat-dialog-content>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="folderName">Nom de dossier</label>
+      <input type="text" id="folderName" [(ngModel)]="folderName" name="folderName" required>
+    </div>
+    <div>
+      <label for="folderColor">Couleur du dossier</label>
+      <div class="color-options">
+        <div *ngFor="let color of colors" 
+             [style.background]="color" 
+             (click)="selectColor(color)"
+             [class.selected]="color === selectedColor">
+        </div>
+        <div class="add-color">+</div>
+      </div>
+    </div>
+    <button type="submit" [disabled]="!folderName || !selectedColor">Ajouter</button>
+  </form>
+</mat-dialog-content>

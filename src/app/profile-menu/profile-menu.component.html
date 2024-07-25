@@ -1,0 +1,16 @@
+<div class="navbar-right">
+    <div class="profile" (click)="toggleMenu()">
+      <h5 class="profile-avatar">A</h5>
+    </div>
+    <div *ngIf="isOpen$ | async" class="dropdown-menu">
+      <ul>
+        <li><a routerLink="/profile">Profil</a></li>
+        <li><a routerLink="/account">Compte</a></li>
+        <li><a routerLink="/help">Centre D'aide</a></li>
+        <li><a routerLink="/feedback">Retour d'information</a></li>
+        <li><a routerLink="/news">Nouveautés</a></li>
+        <li><a routerLink="/logout">Se déconnecter</a></li>
+      </ul>
+    </div>
+  </div>
+  

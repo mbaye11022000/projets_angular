@@ -1,0 +1,102 @@
+
+
+   .register-container {
+    background-color: white;
+    width: 660px;
+    margin:  auto; /* Correction de la marge auto pour centrer */
+    margin-top: 1%;
+    padding: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement tous les enfants */
+    margin-left: 2%;
+    height: 800px;
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Assure que les champs de formulaire prennent toute la largeur disponible */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+  
+    width: 100%; /* Assure que les champs prennent toute la largeur disponible */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box; 
+  }
+  
+  button {
+    width: 100%;
+    padding: 20px;
+    background-color: #4b95e4;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:  #0ec1ee;
+  }
+  
+  .h {
+    background-color: #0f0f0f;
+  }
+  
+  .o {
+    text-align: center;
+  }
+  
+  .s {
+    background-color: #0ec1ee;
+  }
+  
+  .forgot-password {
+    text-align: right;
+  }
+  
+  .register {
+    color: #0ec1ee;
+  }
+  
+  .f {
+    text-align: center;
+  }
+  
+  .img {
+    width: 150px;
+    margin-bottom: 20px; /* Ajoute de l'espace en dessous de l'image */
+  }
+  
+  .q {
+    text-align: center;
+  }
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group label {
+    margin-right: 10px;
+  }
+  
+  
+  .car {
+    position: absolute;
+    top: -0;
+    right: 0;
+    /* facultatif, pour ajouter un peu d'espace autour */
+    
+  }
+  
+  

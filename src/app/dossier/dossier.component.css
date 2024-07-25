@@ -1,0 +1,16 @@
+.folders {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 1110%;
+  }
+  
+  .folders div {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  .card{
+    width: 50%;
+    margin-top: 10%;
+  }

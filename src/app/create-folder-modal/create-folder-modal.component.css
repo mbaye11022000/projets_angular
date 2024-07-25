@@ -1,0 +1,37 @@
+.modal {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .close-btn {
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .color-options div {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .color-options .selected {
+    border: 2px solid black;
+  }
+  

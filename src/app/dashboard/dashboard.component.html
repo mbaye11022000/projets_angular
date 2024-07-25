@@ -1,0 +1,118 @@
+<app-navbare></app-navbare>
+<br>
+<br>
+<mat-sidenav-container class="sidenav-container">
+  <div class="separatore"></div>
+  <mat-sidenav class="sidenav" mode="side" opened>
+    
+    <mat-toolbar class="sidenav-toolbar"> 
+      <div class="separator"></div>
+      <a mat-list-item [routerLink]="['/dashboard/forms']">
+        <div style="display: flex; align-items: center; width: 80%;">
+        <mat-icon >folder</mat-icon>
+       <span style="flex-grow: 1; padding-left: 10px;">  Mes Formulaires</span>
+        <span>({{ trashCount }})</span>
+        </div>
+      </a>
+      <div class="separator"></div>
+    </mat-toolbar>
+   
+    <mat-nav-list>
+      <a mat-list-item (click)="openFolderDialog()">
+        <div style="display: flex; align-items: center; width: 80%;padding-left: 30px">
+        <mat-icon>create_new_folder</mat-icon>
+       <span style="flex-grow: 1; padding-left: 5px;">  Créer un nouveau dossier</span>
+        </div>
+      </a>
+      <div *ngFor="let folder of folders">
+        <button mat-button [style.background]="folder.color">{{ folder.name }}</button>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
+        <mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <a class="badge" href="#">Gratuit</a>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  
+    <p>Formulaire de quota</p>
+    <p>Quota de réponses mensuelles : 0 / 100</p>
+    <p>Quota de vue de formulaire : 0 / 1000</p>
+    <a href="#">Voir tout</a>
+ 
+</mat-expansion-panel>
+
+     
+      
+      
+
+      <a mat-list-item [routerLink]="['/dashboard/archive']">
+        <div style="display: flex; align-items: center; width: 100%;">
+          <mat-icon>archive</mat-icon>
+          <span style="flex-grow: 1; padding-left: 8px;">Archive</span>
+          <span>({{ archiveCount }})</span>
+        </div>
+      </a>
+      
+
+
+
+      <div class="separator"></div>
+      <a mat-list-item [routerLink]="['/dashboard/trash']">
+        <div style="display: flex; align-items: center; width: 100%;">
+        <mat-icon>delete</mat-icon >
+          <span style="flex-grow: 1; padding-left: 8px;">Delete</span>
+         ({{ trashCount }})
+        </div>
+      </a>
+      
+
+
+
+      <div class="separator"></div>
+      <a mat-list-item [routerLink]="['/dashboard/submissions']">
+        <div style="display: flex; align-items: center; width: 100%;">
+        <mat-icon>send</mat-icon>
+        <span style="flex-grow: 1; padding-left: 8px;">Mes soumissions </span>
+      </div>
+      </a>
+
+      <div class="separator"></div>
+      
+      <a mat-list-item (click)="openTeamDialog()">
+        <div style="display: flex; align-items: center; width: 100%;">
+        <mat-icon>group</mat-icon>
+        <span style="flex-grow: 1; padding-left: 8px;">Membres d'équipe  </span>
+      </div>
+      </a>
+   
+         
+    </mat-nav-list>
+  </mat-sidenav>
+  <div class="vertical-line"></div>
+  <mat-sidenav-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+
+
+

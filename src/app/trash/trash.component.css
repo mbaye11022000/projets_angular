@@ -1,0 +1,18 @@
+.add{
+    
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.form-list {
+    margin-top: 30%;
+    text-align: center;
+    
+  }
+  .img {
+    height: 10vh;
+  }
+  .background{
+    background-color: hsl(240, 33%, 97%);
+    height: 560px;
+  }

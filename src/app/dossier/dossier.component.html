@@ -1,0 +1,20 @@
+<!-- <p>dossier works!</p>
+<div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div> -->
+
+<div class="card">
+
+  <button (click)="openModal()">Créer un dossier</button> 
+<app-create-folder-modal *ngIf="isModalOpen" (folderCreated)="addFolder($even)"></app-create-folder-modal>
+<div class="folders">
+  <div *ngFor="let folder of folders" [style.background]="folder.color">
+    {{ folder.name }}
+  </div>
+</div>
+</div> 

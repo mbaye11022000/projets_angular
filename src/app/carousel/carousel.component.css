@@ -1,0 +1,62 @@
+
+.image{
+  width: 600px;
+  left: 11000px;
+
+}
+.text{
+  color:white;
+  text-align: center;
+}
+.caption{
+  text-align: center;
+  color: white;
+  
+
+}
+.cp{
+  text-align: center;
+  color: white;
+
+}
+
+ .carousel {
+  position: relative;
+  width: 10000%;
+  max-width: 600px;
+  margin: 50px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  box-sizing: content-box;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 1px;
+}
+
+.dot {
+  height: 8px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 20%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: white;
+  width: 30px;
+  
+}
+
