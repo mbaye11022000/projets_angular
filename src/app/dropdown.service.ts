@@ -11,7 +11,8 @@
 //     return this.isOpen.asObservable();
 //   }
 
-//   toggle() {
+//   toggleMenu() {
+//     console.log('Toggle Menu Called');
 //     this.isOpen.next(!this.isOpen.value);
 //   }
 
@@ -34,7 +35,7 @@ export class DropdownService {
     return this.isOpen.asObservable();
   }
 
-  toggle() {
+  toggleMenu() {
     this.isOpen.next(!this.isOpen.value);
   }
 

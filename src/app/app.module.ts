@@ -116,7 +116,8 @@ import { SortDialogComponent } from './sort-dialog/sort-dialog.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { DialogComponentComponent } from './dialog-component/dialog-component.component';
 import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -139,7 +140,8 @@ import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
     FilterDialogComponent,
     SortDialogComponent,
     DialogComponentComponent,
-    ProfileMenuComponent
+    ProfileMenuComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -157,7 +159,9 @@ import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
     MatExpansionModule,
     MatDialogModule,
     MatPaginatorModule,
-    MatRadioModule
+    MatRadioModule,
+    MatMenuModule,
+    MatCheckboxModule
       
   ],
   providers: [

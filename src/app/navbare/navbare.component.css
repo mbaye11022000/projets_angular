@@ -1,51 +1,218 @@
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ajoutez cette ligne */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: black;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+  display: block !important;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.profile-avata {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  color: black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+  width: 350px;
+  padding: 15px 0;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: -40%;
   
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
+}
+
+.badge-free {
+  background-color: black;
+  color: white;
+  padding: 2px 2px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-top: 0%;
+}
+
+.theme-options {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.theme-option {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
   
-  .logo {
-    height: 30px; /* Ajustez selon vos besoins */
-  }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profile {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profile-avatar {
-    width: 40px; /* Ajustez selon vos besoins */
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: blue;
-    color: white;
-    text-align: center;
-  }
-  
-  .profile-name {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
+}
+
+.theme-option:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.logout {
+  color: rgb(226, 16, 16);
+}
 
 
 
-  
+
+
+

@@ -1,7 +1,7 @@
 
    .main-container {
     background-color: hsl(240, 33%, 97%);
-    height: 80px;
+    height: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -10,10 +10,11 @@
   
   .button-container {
     position: absolute;
-    top: 10px;
+    top: 50px;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-left: -20%;
     
   }
   
@@ -51,7 +52,7 @@
   
   .toolbar {
     position: absolute;
-    top: 10px;
+    top: 50px;
     right: 10px;
     display: flex;
     gap: 10px;
@@ -84,7 +85,7 @@
   .f {
     text-shadow: 20px;
     margin-left: 40px;
-    margin-top: 1%;
+    margin-top: 5%;
     font-size: 20px;
     font-weight: bold;
   }
@@ -144,16 +145,6 @@
 
 
 
-
-
-/* input[type="text"] {
-  margin-top: 1px;
-  padding: 3px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 10%;
-  box-sizing: border-box;
-} */
 .custom-button {
   background-color: #3f51b5; /* Couleur de fond */
   color: white; /* Couleur du texte */
@@ -169,3 +160,143 @@
 
 
 
+.mat-dialog-container {
+  position: absolute !important;
+}
+
+
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: width 0.3s ease;
+}
+
+.search-wrapper button,
+.search-wrapper mat-form-field {
+  transition: opacity 0.3s ease;
+}
+
+.search-wrapper.searching {
+  width: 150px; /* Ajustez cette valeur selon vos besoins */
+  height: 1px;
+  background-color: white;
+  margin-top: 10%;
+}
+
+.search-wrapper button {
+  opacity: 1;
+}
+
+.search-wrapper.searching button {
+  opacity: 10;
+}
+
+.search-wrapper mat-form-field {
+  width: 0;
+  opacity: 0;
+}
+
+.search-wrapper.searching mat-form-field {
+  width: 100%;
+  opacity: 1;
+}
+
+mat-form-field {
+  margin: 0;
+}
+
+
+
+.filter-menu {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+  z-index: 1000;
+}
+
+
+
+.sort-menu {
+  position: absolute;
+  top: 50px; /* Ajuster cette valeur si nécessaire */
+  left: -800px;
+  display: flex;
+  width: 1100px;
+ 
+  border-radius: 4px;
+  padding: 3px;
+  z-index: 1000;
+  
+}
+
+
+
+mat-list-option {
+  display: flex;
+  align-items: center;
+}
+
+mat-radio-button {
+  margin-right: 8px;
+}
+.yellow-icon {
+  color: yellow;
+}
+
+.red-icon {
+  color: red;
+}
+
+.grey-icon {
+  color: grey;
+}
+
+.green-icon {
+  color: green;
+}
+
+.orange-icon {
+  color: orange;
+}
+
+.blue-icon {
+  color: blue;
+}
+
+.black-icon {
+  color: black;
+}
+mat-icon{
+  color: #000;
+}
+
+
+
+.sort-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espace entre les icônes et le texte */
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: none;
+}
+
+.sort-menu-item:hover {
+  background-color: white;
+}
+
+.mat-checkbox {
+  margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}

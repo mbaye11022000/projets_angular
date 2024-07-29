@@ -1,34 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, Subscribable } from 'rxjs';
-import { DropdownService } from '../dropdown.service'
+import { DropdownService } from '../dropdown.service';
+import { Observable } from 'rxjs';
+
 @Component({
   selector: 'app-navbare',
   templateUrl: './navbare.component.html',
-  styleUrl: './navbare.component.css'
+  styleUrls: ['./navbare.component.css']
 })
-export class NavbareComponent implements OnInit{
+export class NavbareComponent implements OnInit {
+  isOpen$: Observable<boolean>;
 
-  isOpen$: Observable<unknown> | Subscribable<unknown> | Promise<unknown> | undefined | undefined | undefined;
+  constructor(private dropdownService: DropdownService) {
+    this.isOpen$ = this.dropdownService.isOpen$;
+  }
 
-constructor(private dropdownService: DropdownService) {}
+  ngOnInit() {
+    this.isOpen$.subscribe(isOpen => {
+      console.log('Dropdown Menu State:', isOpen);
+    });
+  }
 
-ngOnInit() {
-  this.isOpen$ = this.dropdownService.isOpen$;
+  toggleMenu() {
+    console.log('Avatar Clicked');
+    this.dropdownService.toggleMenu();
+  }
 }
-
-toggleMenu() {
-  this.dropdownService.toggle();
-}
-
-closeMenu() {
-  this.dropdownService.close();
-}
-
-
-}
-
-
-
-
- 
-
