@@ -1,7 +1,4 @@
 
-
-
-   /* CSS */
 .signin-container {
     background-color: white;
     width: 660px;
@@ -14,13 +11,13 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre horizontalement tous les enfants */
+    align-items: center; 
     
   }
   
   .form-group {
     margin-bottom: 15px;
-    width: 100%; /* Assure que les champs de formulaire prennent toute la largeur disponible */
+    width: 100%; 
     
   }
   
@@ -30,7 +27,7 @@
   }
   
   .form-group input {
-      width: 100%; /* Assure que les champs prennent toute la largeur disponible */
+      width: 100%; 
       padding: 10px;
       border: 1px solid #ddd;
       border-radius: 10px;
@@ -47,16 +44,14 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centre le texte */
+    justify-content: center; 
   }
   
   button img {
-    margin-right: 20px; /* Espace entre l'image et le texte */
+    margin-right: 20px; 
   }
   
-   /* button:hover {
-    background-color: #0056b3;
-  }  */
+   
   
   .h {
     background-color: #070707;
@@ -109,20 +104,14 @@
   }
   .jjjk {
     width: 40px;
-    margin-left: -160; /* Correction de la marge pour l'image */
+    margin-left: -160; 
   }
   
   .img {
     width: 150px;
-    margin-bottom: 10px; /* Ajoute de l'espace en dessous de l'image */
+    margin-bottom: 10px; 
   }
-  /* .separator {
-    text-align: center;
-    margin: 20px 0;
-    font-weight: bold;
-    
-    
-  } */
+  
   .separator {
     text-align: center;
     margin: 20px 0;
@@ -159,7 +148,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    /* facultatif, pour ajouter un peu d'espace autour */
+    
     
     
   }

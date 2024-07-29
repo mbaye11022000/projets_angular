@@ -9,9 +9,9 @@ export class SubmissionsComponent {
 
 
   
-  // Méthode de tri (vous pouvez ajouter la logique de tri ici)
+  
   onSort(column: string) {
     console.log('Sort by:', column);
-    // Ajoutez votre logique de tri ici
+    
   }
 }

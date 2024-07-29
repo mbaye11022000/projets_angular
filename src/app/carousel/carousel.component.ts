@@ -49,7 +49,7 @@ export class CarouselComponent implements OnInit, OnDestroy {
     carouselInner.style.transform = `translateX(${offset}%)`;
     dots[this.slideIndex].classList.add('active');
 
-    this.slideInterval = setTimeout(() => this.showSlides(), 3000); // Change image every 3 seconds
+    this.slideInterval = setTimeout(() => this.showSlides(), 3000); 
   }
 
   currentSlide(n: number) {

@@ -1,13 +1,4 @@
-// import { NgModule } from '@angular/core';
-// import { RouterModule, Routes } from '@angular/router';
 
-// const routes: Routes = [];
-
-// @NgModule({
-//   imports: [RouterModule.forRoot(routes)],
-//   exports: [RouterModule]
-// })
-// export class AppRoutingModule { }
 
 
 import { NgModule } from '@angular/core';
@@ -22,7 +13,7 @@ import { TrashComponent } from './trash/trash.component';
 import { SubmissionsComponent } from './submissions/submissions.component';
 import { TeamComponent } from './team/team.component';
 import {  DossierComponent } from './dossier/dossier.component';
-// import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { FormComponent } from './form/form.component';
 
 
@@ -41,7 +32,7 @@ const routes: Routes = [
       { path: 'submissions', component: SubmissionsComponent },
       { path: 'team', component: TeamComponent },
       { path: 'dossier', component: DossierComponent },
-      // {path: ' carousel', component:CarouselComponent},
+       {path: ' carousel', component:CarouselComponent},
       { path: 'form', component: FormComponent },
     ] 
   }

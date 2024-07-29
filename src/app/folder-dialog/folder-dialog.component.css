@@ -1,4 +1,4 @@
-/* folder-dialog.component.css */
+
 .color-options {
     display: flex;
     gap: 10px;
@@ -25,7 +25,7 @@
     cursor: pointer;
   }
   
-  /* dashboard.component.css */
+  
   button[mat-button] {
     margin: 5px 0;
     color: #d31515;
