@@ -1,8 +1,8 @@
 
-  <div class="carousel">
+<div class="carousel">
     <div class="carousel-inner">
       <div class="slide" *ngFor="let slide of slides; let i = index" [ngClass]="{'active': i === slideIndex}">
-        <h2 class="text">{{ slide.text }}</h2>
+        <h1 class="text">{{ slide.text }}</h1>
         <img [src]="slide.image" alt="Image {{ i + 1 }}" class="image">
         <h3 class="text">{{ slide.text }}</h3>
         <div class="caption">{{ slide.caption }}</div>

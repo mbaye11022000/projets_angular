@@ -12,27 +12,194 @@
   </div>
   
   
-    <div class="toolbar">
+    <!-- <div class="toolbar">
       <button mat-icon-button matTooltip="Rechercher">
         <mat-icon  class="bac">search</mat-icon>
         
       </button>
-     
+      -->
 
-      <button mat-icon-button matTooltip="Filtrer" (click)="openDialo()">
+
+      <div class="toolbar">
+        <div class="search-wrapper" [class.searching]="isSearching">
+          <button mat-icon-button matTooltip="Rechercher" (click)="toggleSearch()" *ngIf="!isSearching">
+            <mat-icon class="bac">search</mat-icon>
+          </button>
+          <mat-form-field *ngIf="isSearching">
+            <input matInput placeholder="Formulaire de rechercher" (blur)="toggleSearch()">
+          </mat-form-field>
+        </div>
+
+      <!-- <button mat-icon-button matTooltip="Filtrer" (click)="openDialo()">
   <mat-icon class="bac">filter_list</mat-icon>
-</button>
+</button> -->
+<!-- <button #filterButton mat-icon-button matTooltip="Filtrer" (click)="openDialo()">
+  <mat-icon class="bac">filter_list</mat-icon>
+</button> -->
 
-      
-      <button mat-icon-button matTooltip="Filtrer" class="icon-container" (click)="openSortDialog()">
+<div>
+  <button mat-icon-button [matMenuTriggerFor]="filterMenu" matTooltip="Filtrer">
+    <mat-icon class="bac">filter_list</mat-icon>
+  </button>
+</div>
+
+<mat-menu #filterMenu="matMenu">
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'yellow'}">star</mat-icon>
+    <span>Favoris</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon>star_border</mat-icon>
+    <span>Sans étoile</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'red'}">fiber_manual_record</mat-icon>
+    <span>Réponses non lues</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'grey'}">fiber_manual_record_outline</mat-icon>
+    <span>Sans réponses non lues</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'grey'}">pause_circle_filled</mat-icon>
+    <span>Désactivé</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'green'}">play_circle_filled</mat-icon>
+    <span>Activée</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'green'}">public</mat-icon>
+    <span>Publique</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'orange'}">lock_open</mat-icon>
+    <span>Non répertorié</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'blue'}">group</mat-icon>
+    <span>Limité</span>
+  </button>
+  <button mat-menu-item>
+    <mat-checkbox></mat-checkbox>
+    <mat-icon [ngStyle]="{'color': 'black'}">lock</mat-icon>
+    <span>Privé</span>
+  </button>
+</mat-menu>
+
+
+      <!-- <button mat-icon-button matTooltip="Filtrer" class="icon-container" (click)="openSortDialog()">
         <mat-icon class="bac">arrow_upward</mat-icon>
         <mat-icon class="bac">format_align_left</mat-icon>
-      </button>
+      </button> -->
+
+
+        <button mat-icon-button matTooltip="Filtrer" (click)="toggleFilter()">
+          <mat-icon class="bac">arrow_upward</mat-icon>
+          <!-- <mat-icon class="bac">format_align_left</mat-icon> -->
+        </button>
+        <div *ngIf="isFilterOpen" class="filter-menu">
+          <mat-selection-list>
+        
+              <mat-radio-button>Date de création</mat-radio-button> 
+            
+            
+              <mat-radio-button>Alphabétique</mat-radio-button> 
+            
+            
+              <mat-radio-button>Dernière modification</mat-radio-button> 
+            
+           
+              <mat-radio-button> Nombre de soumissions</mat-radio-button>
+            
+          </mat-selection-list>
+        </div>
+      
+      
     
 
-      <button mat-icon-button matTooltip="Trier" (click)="openDialogg()">
+
+
+
+
+
+
+      <!-- <button mat-icon-button matTooltip="Trier">
         <mat-icon class="bac">sort</mat-icon>
-      </button>
+      </button> -->
+      <div class="toolbare">
+        <button mat-icon-button matTooltip="Trier" (click)="toggleSortMenu()">
+          <mat-icon class="bac">sort</mat-icon>
+        </button>
+        
+        <div *ngIf="isSortMenuOpen" class="sort-menu">
+          <!-- Contenu du menu -->
+          <button class="sort-menu-item">
+            <mat-checkbox></mat-checkbox>
+            <span>Tout sélectionner</span>
+          </button>
+          <button class="sort-menu-item">
+            <mat-icon>arrow_back</mat-icon>
+            <span>Déplacer vers</span>
+          </button>
+          <button class="sort-menu-item">
+            <mat-icon>pause_circle_filled</mat-icon>
+            <span>Désactiver</span>
+          </button>
+          <button class="sort-menu-item">
+            <mat-icon>play_circle_filled</mat-icon>
+            <span>Activer</span>
+          </button>
+          <button class="sort-menu-item">
+            <mat-icon>mark_as_unread</mat-icon>
+            <span>Tout marquer comme lu</span>
+          </button>
+          <button class="sort-menu-item">
+            <mat-icon>archive</mat-icon>
+            <span>Déplacer dans l'archive</span>
+          </button>
+          <button class="sort-menu-item">
+            <mat-icon>delete</mat-icon>
+            <span>Supprimer</span>
+          </button>
+       
+        
+        
+        
+
+
+
+
+
+      
+
+        <!-- <mat-selection-list>
+          <mat-list-option>
+             tout selectionner
+          </mat-list-option>
+          <mat-list-option>
+             Alphabétique
+          </mat-list-option>
+          <mat-list-option>
+             Dernière modification
+          </mat-list-option>
+          <mat-list-option>
+             Nombre de soumissions
+          </mat-list-option>
+        </mat-selection-list> -->
+      </div>
+
+    </div>
+
       <button mat-icon-button matTooltip="Liste">
         <mat-icon class="bac">view_list</mat-icon>
       </button>

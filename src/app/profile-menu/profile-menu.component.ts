@@ -20,7 +20,7 @@ export class ProfileMenuComponent implements OnInit {
   }
 
   toggleMenu() {
-    this.dropdownService.toggle();
+    this.dropdownService.toggleMenu();
   }
 
   closeMenu() {
