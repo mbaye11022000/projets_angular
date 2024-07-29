@@ -1,6 +1,6 @@
 .options {
   display: flex;
-  justify-content: space-between; /* Utilisation de space-between pour ajouter de l'espace */
+  justify-content: space-between; 
   padding: 20px;
   
 }
@@ -12,13 +12,13 @@
   justify-content: center;
   width: 200px;
   padding: 20px;
-  border: 1px solid #ccc; /* Encadrer les cartes par des traits */
+  border: 1px solid #ccc; 
   border-radius: 8px;
   text-align: center;
   background-color: white;
   cursor: pointer;
   transition: transform 0.2s;
-  margin: 0 10px; /* Ajout de marge horizontale pour l'espace entre les cartes */
+  margin: 0 10px; 
 }
 
 .option-card:hover {
@@ -53,13 +53,13 @@
   justify-content: center;
   width: 200px;
   padding: 20px;
-  border: 1px solid #ccc; /* Encadrer les cartes par des traits */
+  border: 1px solid #ccc; 
   border-radius: 8px;
   text-align: center;
   background-color: rgb(241, 235, 240);
   cursor: pointer;
   transition: transform 0.2s;
-  margin: 0 10px; /* Ajout de marge horizontale pour l'espace entre les cartes */
+  margin: 0 10px; 
 }
 .option-cardd:hover {
   background-color: #f3d3e3;
@@ -82,7 +82,7 @@
 
 .icon-box i {
   font-size: 40px;
-  color: #4A90E2; /* Changez la couleur selon vos besoins */
+  color: #4A90E2; 
 }
 
 .icon-box p {

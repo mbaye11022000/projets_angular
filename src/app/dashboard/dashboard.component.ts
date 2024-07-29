@@ -12,8 +12,8 @@ interface Folder {
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  archiveCount: number = 0; // Exemple : Remplacez par les comptages réels
-  trashCount: number = 0; // Exemple : Remplacez par les comptages réels
+  archiveCount: number = 0; 
+  trashCount: number = 0; 
 submissionMenu: any;
 
 openModal() {

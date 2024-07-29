@@ -26,11 +26,7 @@ toggleCards() {
 throw new Error('Method not implemented.');
 
 }
-// isSearchVisible = false;
 
-//   toggleSearch() {
-//     this.isSearchVisible = !this.isSearchVisible;
-//   }
 
 isSearching = false;
 
@@ -50,11 +46,7 @@ isSearching = false;
   toggleSortMenu() {
     this.isSortMenuOpen = !this.isSortMenuOpen;
   }
-showDialog = false; // Variable d'état pour afficher/masquer la boîte de dialogue modale
-
-
-
-
+showDialog = false; 
 
 
   openDialog() {
@@ -66,30 +58,14 @@ showDialog = false; // Variable d'état pour afficher/masquer la boîte de dialo
   }
   
   selectOption(option: string) {
-    // Logique à implémenter en fonction de l'option sélectionnée
+    
     console.log('Option sélectionnée : ', option);
-    // Ajoutez ici la logique pour gérer les actions en fonction de l'option choisie
-    // Par exemple, vous pouvez router vers une autre page ou exécuter une fonction spécifique
-    // en fonction de l'option choisie.
+    
   }
   
   constructor(public dialog: MatDialog) { }
 
-  // openDialo(): void {
-  //   const dialogRef = this.dialog.open(FilterDialogComponent, {
-  //     width: '250px'
-      
   
-  //   });
-    
-    
-
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log('Le dialogue a été fermé');
-  //   });
-   
-    
-  // }
   openDialo() {
     const rect = this.filterButton.nativeElement.getBoundingClientRect();
     const dialogRef = this.dialog.open(FilterDialogComponent, {
@@ -115,26 +91,21 @@ showDialog = false; // Variable d'état pour afficher/masquer la boîte de dialo
     });
   }
 
-  
-
-
-  
 
 }
 
 
-
 export class FormComponent {
-  showCards = false; // Variable d'état
+  showCards = false; 
 
   toggleCards() {
-    this.showCards = !this.showCards; // Change l'état pour afficher/masquer les cartes
+    this.showCards = !this.showCards; 
   }
 }
 
 
 
-// form-list.component.ts
+
 
 
 

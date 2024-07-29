@@ -16,7 +16,7 @@
   }
   
   .mat-toolbar {
-    background-color:  hsl(240, 33%, 97%); /* Couleur d'arrière-plan pour la barre d'outils principale */
+    background-color:  hsl(240, 33%, 97%); 
     color: white;
     margin-top: 5%;
   }
@@ -57,26 +57,26 @@
   }
 
   .badge:hover {
-    background-color: #0c0c0c; /* Couleur de fond au survol */
+    background-color: #0c0c0c; 
   }
   
-/* Assurez-vous que le conteneur du badge est positionné en bas */
+
 
 ::ng-deep .mat-expansion-panel-header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Aligne les éléments du header */
+  justify-content: space-between; 
 }
 
 ::ng-deep .mat-expansion-panel-header .badge {
   position: absolute;
-  bottom: 10px; /* Ajustez cette valeur selon vos besoins */
-  left: 10px; /* Ajustez cette valeur selon vos besoins */
-  background-color: #130202; /* Couleur de fond pour le badge */
-  padding: 5px 10px; /* Espacement autour du texte du badge */
-  border-radius: 4px; /* Coins arrondis pour le badge */
-  color: white; /* Couleur du texte du badge */
-  text-decoration: none; /* Supprime la décoration du lien */
+  bottom: 10px; 
+  left: 10px; 
+  background-color: #130202; 
+  padding: 5px 10px; 
+  border-radius: 4px; 
+  color: white; 
+  text-decoration: none; 
 }
 
   mat-expansion-panel {

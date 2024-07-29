@@ -9,5 +9,5 @@ import { MatDialogRef } from '@angular/material/dialog';
 export class TeamDialogComponent {
   constructor(public dialogRef: MatDialogRef<TeamDialogComponent>) {}
 
-  // Vous pouvez ajouter des méthodes pour gérer les clics sur les boutons ici, si nécessaire
+  
 }

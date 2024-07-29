@@ -12,12 +12,7 @@
   </div>
   
   
-    <!-- <div class="toolbar">
-      <button mat-icon-button matTooltip="Rechercher">
-        <mat-icon  class="bac">search</mat-icon>
-        
-      </button>
-      -->
+   
 
 
       <div class="toolbar">
@@ -30,12 +25,6 @@
           </mat-form-field>
         </div>
 
-      <!-- <button mat-icon-button matTooltip="Filtrer" (click)="openDialo()">
-  <mat-icon class="bac">filter_list</mat-icon>
-</button> -->
-<!-- <button #filterButton mat-icon-button matTooltip="Filtrer" (click)="openDialo()">
-  <mat-icon class="bac">filter_list</mat-icon>
-</button> -->
 
 <div>
   <button mat-icon-button [matMenuTriggerFor]="filterMenu" matTooltip="Filtrer">
@@ -97,15 +86,11 @@
 </mat-menu>
 
 
-      <!-- <button mat-icon-button matTooltip="Filtrer" class="icon-container" (click)="openSortDialog()">
-        <mat-icon class="bac">arrow_upward</mat-icon>
-        <mat-icon class="bac">format_align_left</mat-icon>
-      </button> -->
 
 
         <button mat-icon-button matTooltip="Filtrer" (click)="toggleFilter()">
           <mat-icon class="bac">arrow_upward</mat-icon>
-          <!-- <mat-icon class="bac">format_align_left</mat-icon> -->
+          
         </button>
         <div *ngIf="isFilterOpen" class="filter-menu">
           <mat-selection-list>
@@ -125,24 +110,13 @@
         </div>
       
       
-    
-
-
-
-
-
-
-
-      <!-- <button mat-icon-button matTooltip="Trier">
-        <mat-icon class="bac">sort</mat-icon>
-      </button> -->
       <div class="toolbare">
         <button mat-icon-button matTooltip="Trier" (click)="toggleSortMenu()">
           <mat-icon class="bac">sort</mat-icon>
         </button>
         
         <div *ngIf="isSortMenuOpen" class="sort-menu">
-          <!-- Contenu du menu -->
+          
           <button class="sort-menu-item">
             <mat-checkbox></mat-checkbox>
             <span>Tout sélectionner</span>
@@ -174,28 +148,7 @@
        
         
         
-        
 
-
-
-
-
-      
-
-        <!-- <mat-selection-list>
-          <mat-list-option>
-             tout selectionner
-          </mat-list-option>
-          <mat-list-option>
-             Alphabétique
-          </mat-list-option>
-          <mat-list-option>
-             Dernière modification
-          </mat-list-option>
-          <mat-list-option>
-             Nombre de soumissions
-          </mat-list-option>
-        </mat-selection-list> -->
       </div>
 
     </div>
@@ -218,7 +171,7 @@
       <p>Vos formulaires apparaîtront ici.</p>
     </div>
 
-    <!-- Boîte de dialogue modale -->
+   
   <div *ngIf="showDialog" class="modal">
     <div class="modal-content">
       <span class="close" (click)="closeDialog()">&times;</span>
